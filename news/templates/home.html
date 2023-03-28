@@ -3,5 +3,9 @@
 
 {% block content %}
 <h1>Homepage</h1>
-<p>homepage using base.html</p>
+<ul>
+    {% for news in all_post_list %}
+    <li>{{news.text}}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
